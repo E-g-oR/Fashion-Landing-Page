@@ -7,7 +7,7 @@
     display: -ms-flexbox;
     display: flex;
   }
-  .logo {
+  .header__logo {
     position: absolute;
     left: 50%;
     -webkit-transform: translateX(-50%);
@@ -22,10 +22,22 @@
         grid-template: repeat(2, 20vw)/repeat(4, 1fr);
     gap: 2vw;
   }
+  .list {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    gap: 35px;
+  }
+  .card__img img {
+    width: 30vw;
+  }
+  .gallery__link-text {
+    bottom: -30px;
+    right: 0;
+  }
 }
 
 @media all and (max-width: 970px) {
-  .logo {
+  .header__logo {
     position: static;
     -webkit-transform: translateX(0);
             transform: translateX(0);
