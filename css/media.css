@@ -1,0 +1,33 @@
+@media all and (max-width: 1200px) {
+  .menu {
+    display: none;
+  }
+  .menu-button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .logo {
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  .categories {
+    margin-top: 7vw;
+  }
+  .categories__body {
+    -ms-grid-rows: (20vw)[2];
+    -ms-grid-columns: (1fr)[4];
+        grid-template: repeat(2, 20vw)/repeat(4, 1fr);
+    gap: 2vw;
+  }
+}
+
+@media all and (max-width: 970px) {
+  .logo {
+    position: static;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}

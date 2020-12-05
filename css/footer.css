@@ -1,0 +1,160 @@
+.footer {
+  background-color: #f2f8fc;
+}
+
+.footer__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 100px;
+  margin-bottom: 100px;
+}
+
+.footer__left {
+  max-width: 405px;
+}
+
+.footer__text,
+.footer__link {
+  font-size: 15px;
+  margin-top: 17px;
+}
+
+.location {
+  margin-top: 40px;
+  margin-bottom: 17px;
+}
+
+.footer__email,
+.footer__phone {
+  display: block;
+}
+
+.footer__email::after {
+  content: "";
+  display: block;
+  width: 237px;
+  height: 1px;
+  background-color: #22262a;
+  margin-top: 3px;
+}
+
+.footer__phone {
+  margin-top: 3px;
+}
+
+.social {
+  margin-top: 17px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sotial__link {
+  height: 20px;
+  width: 20px;
+  margin-right: 10px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+._facebook {
+  background-image: url(../img/icons/facebook.svg);
+}
+
+._instagram {
+  background-image: url(../img/icons/instagram.svg);
+}
+
+._twitter {
+  background-image: url(../img/icons/twitter.svg);
+}
+
+._linkedin {
+  background-image: url(../img/icons/linkedin.svg);
+}
+
+.footer__right {
+  width: 530px;
+}
+
+.mailing__caption {
+  font-size: 25px;
+}
+
+.footer__links-title {
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.form {
+  margin-top: 25px;
+}
+
+.form__background {
+  width: 100%;
+  background-color: #fff;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.form__input {
+  width: 100%;
+  z-index: 2;
+  padding: 10px 17px;
+  font-size: 15px;
+}
+
+.form__submit {
+  z-index: 3;
+  background: transparent;
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 0 25px;
+  cursor: pointer;
+}
+
+.footer__links {
+  margin-top: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer__links-title {
+  margin-bottom: 30px;
+}
+
+.footer__link {
+  display: block;
+}
+
+.copyright {
+  background-color: #E7F5F8;
+  padding: 35px 0;
+}
+
+.copyright__text {
+  text-align: center;
+}
