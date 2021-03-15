@@ -27,12 +27,27 @@
         grid-template-columns: repeat(2, 1fr);
     gap: 35px;
   }
-  .card__img img {
-    width: 30vw;
+  .card {
+    width: 32vw;
+  }
+  .card__img {
+    margin-bottom: 15px;
   }
   .gallery__link-text {
     bottom: -30px;
-    right: 0;
+    right: 20px;
+  }
+}
+
+@media all and (max-width: 1080px) {
+  .gallery__link-1 {
+    width: 57vw;
+  }
+  .gallery__link-2 {
+    width: 47vw;
+  }
+  .gallery__link-3 {
+    width: 27vw;
   }
 }
 
@@ -41,5 +56,221 @@
     position: static;
     -webkit-transform: translateX(0);
             transform: translateX(0);
+  }
+  .fashion {
+    margin-top: 5vw;
+  }
+  .avone-styles {
+    margin-top: 3vw;
+  }
+  .avone-styles .fashion__subtitle {
+    margin-bottom: 3vw;
+  }
+  .gallery__link-1 {
+    margin-top: 3vw;
+  }
+  .card__img {
+    margin-bottom: 1vw;
+  }
+}
+
+@media all and (max-width: 930px) {
+  .hero {
+    background-position: 27% 15px;
+  }
+  .categories__body {
+    -ms-grid-rows: (20vw)[6];
+    -ms-grid-columns: (1fr)[2];
+        grid-template: repeat(6, 20vw)/repeat(2, 1fr);
+  }
+  .categories__item .button {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+  .categories__item-1 {
+    grid-column: span 2;
+    grid-row: span 2;
+  }
+  .categories__item-2 {
+    grid-column: span 1;
+    grid-row: span 2;
+  }
+  .categories__item-3 {
+    grid-column: span 1;
+    grid-row: span 4;
+  }
+  .categories__item-4 {
+    grid-column: span 1;
+    grid-row: span 2;
+  }
+  .footer__body {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0 auto;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    text-align: center;
+  }
+  .footer__left {
+    margin: 0 auto;
+  }
+  .footer__email::after {
+    margin: 3px auto;
+  }
+  .social {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: 20px auto;
+  }
+  .footer__right {
+    margin-left: 0;
+  }
+}
+
+@media all and (max-width: 855px) {
+  .card {
+    width: 40vw;
+  }
+}
+
+@media all and (max-width: 650px) {
+  .hero .container {
+    display: block;
+  }
+  .header__icon {
+    padding: 5px;
+  }
+  .logo {
+    padding: 10px;
+  }
+  .offer {
+    margin-bottom: 0;
+    margin-top: 270px;
+  }
+  .header__icons {
+    display: none;
+  }
+  .hero {
+    margin-top: 69px;
+  }
+  .hero__title,
+  .banner__title {
+    font-size: 50px;
+  }
+  .button {
+    padding: 5px 20px;
+    margin-right: 25px;
+    text-transform: uppercase;
+    font-size: 15px;
+  }
+  .offer__buttons {
+    margin-top: 15px;
+  }
+  .categories__body {
+    gap: 3vw;
+  }
+  .footer__right,
+  .footer__left {
+    width: 100%;
+  }
+  .categories__item .button {
+    left: 15px;
+    bottom: 15px;
+  }
+}
+
+@media all and (max-width: 550px) {
+  .gallery {
+    display: block;
+  }
+  .gallery__link-1,
+  .gallery__link-2,
+  .gallery__link-3 {
+    width: 100%;
+    position: static;
+  }
+}
+
+@media all and (max-width: 520px) {
+  .categories__body {
+    -ms-grid-rows: (40vw)[4];
+    -ms-grid-columns: (1fr)[1];
+        grid-template: repeat(4, 40vw)/repeat(1, 1fr);
+  }
+  .categories__item-1 {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+  .categories__item-2 {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+  .categories__item-3 {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+  .categories__item-4 {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+}
+
+@media all and (max-width: 480px) {
+  .list {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
+  .card {
+    width: 100%;
+  }
+  .footer__links {
+    margin-top: 30px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer__link {
+    font-size: 15px;
+    margin-top: 10px;
+  }
+  .footer__links-box {
+    margin-bottom: 20px;
+  }
+  .footer__links-title {
+    margin-bottom: 10px;
+  }
+  .fashion__subtitle {
+    margin-bottom: 35px;
+  }
+}
+
+@media all and (max-width: 400px) {
+  .hero {
+    background-position: 38% 15px;
+  }
+  .offer {
+    padding: 10px 15px;
+  }
+  .hero__title,
+  .banner__title {
+    font-size: 40px;
+  }
+  .button {
+    margin: 0;
+  }
+  .offer__buttons {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
   }
 }

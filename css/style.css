@@ -24,6 +24,13 @@ body {
   font-size: 15px;
 }
 
+* img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -32,9 +39,8 @@ body {
 
 .hero {
   width: 100vw;
-  height: calc(100vh - 85px);
   background-image: url(../img/hero_bg.jpg);
-  background-position: center 15px;
+  background-position: left 15px;
   background-repeat: no-repeat;
   background-size: cover;
   margin-top: 85px;
@@ -55,7 +61,11 @@ body {
 
 .offer {
   font-size: 18px;
+  margin-top: 330px;
   margin-bottom: 100px;
+  padding: 10px 25px;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
 }
 
 .hero__title {
@@ -103,6 +113,8 @@ body {
 }
 
 .categories__item img {
+  -webkit-transition: 1s;
+  transition: 1s;
   width: 100%;
 }
 
@@ -115,6 +127,11 @@ body {
   -webkit-transition: 0.3s cubic-bezier(1, 0.01, 0.61, 0.84);
   transition: 0.3s cubic-bezier(1, 0.01, 0.61, 0.84);
   opacity: 0;
+}
+
+.categories__item:hover img {
+  -webkit-transform: scale(1.075);
+          transform: scale(1.075);
 }
 
 .categories__item:hover .button {
@@ -178,8 +195,42 @@ body {
   margin: 0 auto;
 }
 
+.card {
+  overflow: hidden;
+  border-radius: 7px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
 .card__img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   margin-bottom: 35px;
+  overflow: hidden;
+}
+
+.card__img img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.card:hover {
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+.card:hover .card__img img {
+  -webkit-transform: scale(1.075);
+          transform: scale(1.075);
+}
+
+.card__info {
+  margin: 0 15px 15px 15px;
 }
 
 .card__type {
@@ -224,16 +275,25 @@ body {
 .gallery__link {
   padding: 20px;
   background-color: #fff;
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .gallery__link img {
+  -webkit-transition: 1s;
+  transition: 1s;
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: center;
      object-position: center;
+}
+
+.gallery__link:hover img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .gallery__link-1 {
