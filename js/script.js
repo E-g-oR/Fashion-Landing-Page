@@ -8,7 +8,7 @@ MainMenuButton.addEventListener('click', () => {
   MainMenu.classList.toggle('main-menu_active');
   MainMenuButton.classList.toggle('main-menu_active');
 });
-// SubMenuButton.addEventListener('click', () => {
-//   // SubMenu.classList.toggle('sub-menu_active');
-//   SubMenuButton.classList.toggle('sub-menu_active');
-// });
+document.addEventListener('scroll', () => {
+  MainMenu.classList.remove('main-menu_active');
+  MainMenuButton.classList.remove('main-menu_active');
+});
