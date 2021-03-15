@@ -1,14 +1,9 @@
-var MainMenuButton = document.querySelector('.menu-button'),
-  SubMenuButton = document.querySelector('.sub-menu-button'),
-  MainMenu = document.querySelector('.main-menu'),
-  SubMenu = document.querySelector('.sub-menu'),
-  MenuButtonLine = document.querySelector('.menu-button_line');
+const menuBtn = document.querySelector('.menu-btn');
+const menuTop = document.querySelector('.menu-top')
+// const menuTopLink = document.querySelectorAll('.menu-top__link');
 
-MainMenuButton.addEventListener('click', () => {
-  // MainMenu.classList.toggle('main-menu_active');
-  MainMenuButton.classList.toggle('main-menu_active');
-});
-SubMenuButton.addEventListener('click', () => {
-  // SubMenu.classList.toggle('sub-menu_active');
-  SubMenuButton.classList.toggle('sub-menu_active');
-});
+menuBtn.addEventListener('click', () => {
+   menuBtn.classList.toggle('menu-active');
+
+   menuTop.classList.toggle('menu-active');
+})

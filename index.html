@@ -4,13 +4,34 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Fassion landing page</title>
-  <link rel="shortcut icon" href="img/logo/favicon.svg">
+  <title>Alto | The neighborhood pharmacy that comes to you.</title>
+  <meta name="description"
+    content="Alto — the best pharmacy for your health. Free same-day delivery. The neighborhood pharmacy that comes to you. The extraordinary care you deserve. Is it okay to drink with these pills? Ask your pharmacist online and get fast support. Chat with a pharmacist. Give yourself access to exceptional care. Believe in a better pharmacy.">
+
+  <!-- "og:locale" — указывает локализацию (язык сайта), можно использовать значение "ru_RU" по умолчанию.
+"og:type" — указывает тип страницы (статья, новость, видео, категория и т. д.), можно использовать по умолчанию "article". -->
+  <meta property="og:title" content="Alto | The neighborhood pharmacy that comes to you.">
+  <!-- og:title - заглавие страницы, он же тайтл. Можете скопировать из тега title. -->
+  <meta property="og:site_name" content="alto.com">
+  <!-- og:site_name - название сайта. -->
+  <meta property="og:url" content="">
+  <!-- og:url - ссылка страницы, где вы добавляете этот код. 
+    Если это однастраничник, то это просто ссылка на главную сайта. 
+    Если сайт на CMS или самописный и у него много страниц, 
+    то вам придется для каждой указать свой тег, со своей ссылкой. -->
+  <meta property="og:description"
+    content="Alto — the best pharmacy for your health. Free same-day delivery. The neighborhood pharmacy that comes to you. The extraordinary care you deserve. Is it okay to drink with these pills? Ask your pharmacist online and get fast support. Chat with a pharmacist. Give yourself access to exceptional care. Believe in a better pharmacy.">
+  <!-- og:description - описание страницы. 
+    Можете скопировать из тега description для страницы, 
+    на которую добавляете теги. -->
+  <meta property="og:image" content="img/access-to-care.png">
+  <!-- og:image - ссылка на картинку, что характеризует страницу. 
+    Можете указать ссылку на лого сайта, или нарисовать 
+    конкретную картинку для этих целей. -->
+
+  <link rel="icon" href="img/logo/logo.svg" type="image/x-icon">
 
   <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="css/header.css">
-  <link rel="stylesheet" href="css/footer.css">
-  <link rel="stylesheet" href="css/media.css">
   <script src="js/script.js" defer></script>
 </head>
 
@@ -18,345 +39,268 @@
   <header class="header">
     <div class="container">
       <div class="header__body">
-        <button class="menu-button">
-          <span class="menu-button_line menu-button_line_top"></span>
-          <span class="menu-button_line menu-button_line_middle"></span>
-          <span class="menu-button_line menu-button_line_bottom"></span>
-        </button>
-        <a class="header__logo logo" href="#">
-          <img src="img/logo/LOGO.svg" alt="Facision landing page logo">
-        </a>
-        <nav class="header__nav menu">
-          <li class="menu__item"><a class="menu__link" href="#">Home</a></li>
-          <li class="menu__item"><a class="menu__link" href="#">Shop</a></li>
-          <li class="menu__item"><a class="menu__link" href="#">Lookbook</a></li>
-          <li class="menu__item"><a class="menu__link" href="#">Features</a></li>
-          <li class="menu__item"><a class="menu__link" href="#">Pages</a></li>
-          <li class="menu__item"><a class="menu__link" href="#">Blog</a></li>
-        </nav>
-        <div class="header__icons">
-          <div class="search header__icon">
-            <input class="search__input" type="search" name="search" id="search">
-          </div>
-          <a class="wishlist-icon header__icon" href="#">
-            <img src="img/icons/heart_icon.svg" alt="Facision landing page wishlist">
-          </a>
-          <a class="cart-icon header__icon" href="#">
-            <img src="img/icons/cart_icon.svg" alt="Facision landing page cart">
+        <div class="header__btn menu-btn">
+          <div class="menu-btn__plank plank1"></div>
+          <div class="menu-btn__plank plank2"></div>
+        </div>
+        <div class="logo">
+          <a href="#">
+            <img src="img/logo/logo.svg" alt="Alto logo">
           </a>
         </div>
-        <div class="sub-menu-button"></div>
+        <div class="header__info-links">
+          <ul>
+            <li class="info-link link"><a href="#">for providers</a></li>
+            <li class="info-link link"><a href="#">sign in</a></li>
+          </ul>
+        </div>
       </div>
     </div>
   </header>
 
-  <section class="hero">
+  <section class="hero section">
     <div class="container">
-      <div class="hero__body offer">
-        <p class="hero__subtitle">New trends</p>
-        <h1 class="hero__title">Collusion</h1>
-        <p class="hero__caption">An exclusive selection of this season's trends.</p>
-        <div class="offer__buttons">
-          <a class="hero__button button button_discover" href="#">Discover</a>
-          <a class="hero__button button button_shopNow" href="#">Shop now</a>
+      <h1 class="hero__title head-title">The neighborhood pharmacy that comes to you.</h1>
+      <h2 class="hero__subtitle text">We're your #1 rated pharmacy with free same-day delivery and extraordinary care.
+      </h2>
+      <div class="hero__btn btn  link"><a href="#"><span>Transfer in seconds</span><img src="img/btn-arrow.svg"
+            alt="button arrow"></a></div>
+
+    </div>
+  </section>
+
+  <section class="getting-started section">
+    <div class="container">
+      <h2 class="getting-started__title title">Getting started is easy</h2>
+      <div class="getting-started__list some-list">
+        <div class="getting-started__card card">
+          <img class="card__img" src="img/gettingStarted-1.png" alt="send in a prescription">
+          <h3 class="card__title title-small">Send in a prescription</h3>
+          <p class="card__text text">Transfer your existing prescription or ask your doctor to send a
+            new
+            prescription to Alto.</p>
+        </div>
+        <div class="getting-started__card card">
+          <img class="card__img" src="img/gettingStarted-2.png" alt="send in a prescription">
+          <h3 class="card__title title-small">See your savings</h3>
+          <p class="card__text text">We'll search for savings on your medication and show you delivery
+            options.
+            We
+            accept most major insurance plans.</p>
+        </div>
+        <div class="getting-started__card card">
+          <img class="card__img" src="img/gettingStarted-3.png" alt="send in a prescription">
+          <h3 class="card__title title-small">Receive your delivery</h3>
+          <p class="card__text text">You pick the day and time and we'll deliver it by hand, for free. No
+            delivery or
+            hidden fees.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="categories">
+  <section class="customer-videoreview section">
     <div class="container">
-      <div class="categories__body">
-        <div class="categories__item  categories__item-1">
-          <a href="#" class="categories__link">
-            <img src="img/category_1.jpg" alt="">
-            <a class="hero__button button button__white" href="#">Category name</a>
-          </a>
+      <div class="customer-videoreview__body">
+        <div class="customer-videoreview__video">
+          <img src="img/videoPreview.jpg" alt="Customers review. Lisa's videoreview.">
+          <div class="customer-videoreview__btn btn link"><a href="#"><span>Watch Lisa's story</span><img
+                src="img/btn-arrow.svg" alt="button arrow"></a></div>
         </div>
-        <div class="categories__item  categories__item-2">
-          <a href="#" class="categories__link">
-            <img src="img/category_4.jpg" alt="">
-            <a class="hero__button button button__white" href="#">Category name</a>
-          </a>
+        <div class="review-info">
+          <h3 class="review-info__title quote">"It's been a life changer for me - how easy it is to use. I'll
+            never go to a pharmacy again."</h3>
+          <p class="review-info__quote-author">— Lisa, Alto customer</p>
         </div>
-        <div class="categories__item  categories__item-3">
-          <a href="#" class="categories__link">
-            <img src="img/category_2.jpg" alt="">
-            <a class="hero__button button button__white" href="#">Category name</a>
-          </a>
+
+      </div>
+    </div>
+  </section>
+
+
+  <section class="extraordinary-care section">
+    <div class="container">
+      <h2 class="extraordinary-care__title title">The extraordinary care you deserve.</h2>
+      <div class="extraordinary-care__list some-list">
+        <div class="extraordinary-care__card card">
+          <img class="extraordinary-care__img card__img" src="img/care-1.png"
+            alt="Extraordinary care. Low prices. Image.">
+          <h3 class="card__title title-small">Low prices</h3>
+          <p class="card__text text">We’ve saved our users more than $40 million on their medications.</p>
         </div>
-        <div class="categories__item  categories__item-4">
-          <a href="#" class="categories__link">
-            <img src="img/category_3.jpg" alt="" />
-            <a class="hero__button button button__white" href="#">Category name</a>
-          </a>
+        <div class="extraordinary-care__card card">
+          <img class="extraordinary-care__img card__img" src="img/care-2.png"
+            alt="Extraordinary care. Free same-day delivery. Image.">
+          <h3 class="card__title title-small">Free same-day delivery</h3>
+          <p class="card__text text">Before work, in the evening, or right to your office. The same day, and it’s free.
+          </p>
+        </div>
+        <div class="extraordinary-care__card card">
+          <img class="extraordinary-care__img card__img" src="img/care-3.png"
+            alt="Extraordinary care. Chat with a pharmacist. Image.">
+          <h3 class="card__title title-small">Chat with a pharmacist</h3>
+          <p class="card__text text">Worried about side effects? Something else? Chat with a pharmacist anytime.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="fashion">
+  <section class="chat-support section">
     <div class="container">
-      <h3 class="fashion__title">Women's fashion</h3>
-      <p class="fashion__subtitle">Shop our new arrivals from established brands</p>
-      <div class="fashion__list list">
-
-        <a class="list__item card" href="#">
-          <div class="card__img">
-            <img src="img/womensFashion_1.jpg" alt="">
+      <div class="chat-support__body">
+        <div class="chat-support__text">
+          <h2 class="chat-support__title title">Ask your pharmacist, not the Internet.</h2>
+          <p class="chat-support__subtitle text">Prescriptions can be tricky. Our pharmacists are just a chat, text, or
+            phone call away.</p>
+        </div>
+        <div class="chat-support__chat-template chat">
+          <div class="chat__message chat__message_left message">
+            <span class="message__text">Is it okay to drink with these pills?</span>
           </div>
-          <div class="card__info">
-            <p class="card__type">Igure</p>
-            <h4 class="card__title">Green muscle fit polo shirt</h4>
-            <div class="card__prices">
-              <p class="card__price _old">$229.00</p>
-              <p class="card__price _discounted">$129.00</p>
-            </div>
+          <div class="chat__message chat__message_right message">
+            <span class="message__text">I have a headache, can I take Advil?</span>
           </div>
-        </a>
-
-        <a class="list__item card" href="#">
-          <div class="card__img">
-            <img src="img/womensFashion_2.jpg" alt="">
+          <div class="chat__message chat__message_left message">
+            <span class="message__text">My medicine doesn’t seem to be working.</span>
           </div>
-          <div class="card__info">
-            <p class="card__type">Igure</p>
-            <h4 class="card__title">Green muscle fit polo shirt</h4>
-            <div class="card__prices">
-              <p class="card__price _old">$229.00</p>
-              <p class="card__price _discounted">$129.00</p>
-            </div>
+          <div class="chat__message chat__message_right message">
+            <span class="message__text">This acne medicine is upsetting my stomach.</span>
           </div>
-        </a>
-
-        <a class="list__item card" href="#">
-          <div class="card__img">
-            <img src="img/womensFashion_3.jpg" alt="">
-          </div>
-          <div class="card__info">
-            <p class="card__type">Igure</p>
-            <h4 class="card__title">Green muscle fit polo shirt</h4>
-            <div class="card__prices">
-              <p class="card__price _old">$229.00</p>
-              <p class="card__price _discounted">$129.00</p>
-            </div>
-          </div>
-        </a>
-
-        <a class="list__item card" href="#">
-          <div class="card__img">
-            <img src="img/womensFashion_4.jpg" alt="">
-          </div>
-          <div class="card__info">
-            <p class="card__type">Igure</p>
-            <h4 class="card__title">Green muscle fit polo shirt</h4>
-            <div class="card__prices">
-              <p class="card__price _old">$229.00</p>
-              <p class="card__price _discounted">$129.00</p>
-            </div>
-          </div>
-        </a>
-
+        </div>
       </div>
     </div>
   </section>
 
-  <section class="fashion">
+  <section class="exceptional-care section">
     <div class="container">
-      <h3 class="fashion__title">Men's fashion</h3>
-      <p class="fashion__subtitle">Shop our new arrivals from established brands</p>
-      <div class="fashion__list list">
+      <h2 class="exceptional-care__title title">Give yourself access to exceptional care.</h2>
+      <img src="img/access-to-care.png" alt="Give yourself access to exceptional care.">
+      <h3 class="exceptional-care__subtitle title-small">Emily's heart medication was going to <u>$487</u> cost her,
+        even with
+        Medicare.</h3>
+    </div>
+    <div class="exceptional-care__back-img">
+      <h3 class="exceptional-care__subtitle title-small container">We found her a coupon program that brought it down to
+        <u>$0</u>, and
+        we delivered it to her that night.
+      </h3>
+      <img src="img/access-to-care-illustration.png" alt="We found her a coupon program that brought it down to $0, and
+                    we delivered it to her that night.">
+    </div>
+  </section>
 
-        <a class="list__item card" href="#">
-          <div class="card__img">
-            <img src="img/mensFashion_1.jpg" alt="">
-          </div>
-          <div class="card__info">
-            <p class="card__type">Igure</p>
-            <h4 class="card__title">Green muscle fit polo shirt</h4>
-            <div class="card__prices">
-              <p class="card__price _old">$229.00</p>
-              <p class="card__price _discounted">$129.00</p>
+  <section class="review-section section">
+    <div class="container">
+      <div class="review">
+        <div class="review__img">
+          <img src="img/review-pic.jpg"
+            alt="I will never go back to another pharmacy again...Thank you for making our busy family's world much easier">
+        </div>
+        <div class="review__info">
+          <h2 class="review__quote title">"I will never go back to another pharmacy again...Thank you for making
+            our busy family's world much easier."</h2>
+          <div class="review__rate-info">
+            <div class="review__rate">
+              <img src="img/rate.svg" alt="review rate. 4.5">
             </div>
+            <a class="review__based link" href="#"><span>Based on 913 reviews</span> <img src="img/btn-arrow.svg"
+                alt="button arrow"> </a>
           </div>
-        </a>
-
-        <a class="list__item card" href="#">
-          <div class="card__img">
-            <img src="img/mensFashion_2.jpg" alt="">
-          </div>
-          <div class="card__info">
-            <p class="card__type">Igure</p>
-            <h4 class="card__title">Green muscle fit polo shirt</h4>
-            <div class="card__prices">
-              <p class="card__price _old">$229.00</p>
-              <p class="card__price _discounted">$129.00</p>
-            </div>
-          </div>
-        </a>
-
-        <a class="list__item card" href="#">
-          <div class="card__img">
-            <img src="img/mensFashion_3.jpg" alt="">
-          </div>
-          <div class="card__info">
-            <p class="card__type">Igure</p>
-            <h4 class="card__title">Green muscle fit polo shirt</h4>
-            <div class="card__prices">
-              <p class="card__price _old">$229.00</p>
-              <p class="card__price _discounted">$129.00</p>
-            </div>
-          </div>
-        </a>
-
-        <a class="list__item card" href="#">
-          <div class="card__img">
-            <img src="img/mensFashion_4.jpg" alt="">
-          </div>
-          <div class="card__info">
-            <p class="card__type">Igure</p>
-            <h4 class="card__title">Green muscle fit polo shirt</h4>
-            <div class="card__prices">
-              <p class="card__price _old">$229.00</p>
-              <p class="card__price _discounted">$129.00</p>
-            </div>
-          </div>
-        </a>
-
+        </div>
       </div>
     </div>
   </section>
 
-  <section class="avone-styles">
+  <section class="prefooter-banner section">
     <div class="container">
-      <h3 class="fashion__title">Avone styles</h3>
-      <p class="fashion__subtitle">Choose Your Favorite Color</p>
-      <div class="gallery">
-        <a href="#" class="gallery__link gallery__link-1">
-          <img src="img/avoneStyles_1.jpg" alt="">
-        </a>
-        <a href="#" class="gallery__link gallery__link-2">
-          <img src="img/avoneStyles_2.jpg" alt="">
-        </a>
-        <a href="#" class="gallery__link gallery__link-3">
-          <img src="img/avoneStyles_3.jpg" alt="">
-        </a>
-        <a href="#" class="gallery__link-text">Show more dresses</a>
-      </div>
+      <h1 class="prefooter-banner__title head-title">Believe in a better pharmacy.</h1>
+      <div class="prefooter-banner__btn btn link"><a href="#"><span>Transfer in seconds</span><img
+            src="img/btn-arrow.svg" alt="button arrow"></a></div>
     </div>
   </section>
 
-  <section class="banner">
+  <menu class="menu-top">
     <div class="container">
-      <div class="banner__body offer">
-        <p class="banner__subttle">Own the day</p>
-        <h2 class="banner__title">Tachen 19</h2>
-        <a class="hero__button button" href="#">Shop collection</a>
-      </div>
+      <ul class="menu-top__list">
+        <li class="menu-top__link link menu-top__link-1"><a href="#">Our Story</a></li>
+        <li class="menu-top__link link menu-top__link-2"><a href="#">Careers</a></li>
+        <li class="menu-top__link link menu-top__link-3"><a href="#">For Providers</a></li>
+        <li class="menu-top__link link menu-top__link-4"><a href="#">Customer Reviews</a></li>
+        <li class="menu-top__link link menu-top__link-5"><a href="#">FAQs</a></li>
+        <li class="menu-top__link link menu-top__link-6"><a href="#">Blog</a></li>
+        <li class="menu-top__link link menu-top__link-7"><a href="#">Locations</a></li>
+        <li class="menu-top__link link menu-top__link-8"><a href="#">Press</a></li>
+        <li class="menu-top__link link menu-top__link-9"><a href="#">care@alto.com</a></li>
+        <li class="menu-top__link link menu-top__link-10"><a href="#">1 (800) 874-5881</a></li>
+      </ul>
     </div>
-  </section>
+  </menu>
 
   <footer class="footer">
     <div class="container">
-      <div class="footer__body">
-        <div class="footer__left">
-          <a class="footer__logo logo" href="#">
-            <img src="img/logo/LOGO.svg" alt="Facision landing page logo">
+      <div class="footer-top">
+        <div class="logo">
+          <a href="#">
+            <img src="img/logo/logo.svg" alt="Alto logo">
           </a>
-          <p class="footer__text">We earned a reputation of being good at what we do.
-            Let us take your online shop to new dimension in
-            success!</p>
-          <p class="footer__text location">Comilla, Bangladesh 3500</p>
-          <a href="#" class="footer__text footer__email">kawsarahmed0210@gmail.com</a>
-          <a href="#" class="footer__text footer__phone">01647470457</a>
-          <div class="social">
-            <a href="#" class="sotial__link _facebook">
-              <!-- <img src="img/icons/facebook.svg" alt=""> -->
-            </a>
-            <a href="#" class="sotial__link _instagram">
-              <!-- <img src="img/icons/instagram.svg" alt=""> -->
-            </a>
-            <a href="#" class="sotial__link _twitter">
-              <!-- <img src="img/icons/twitter.svg" alt=""> -->
-            </a>
-            <a href="#" class="sotial__link _linkedin">
-              <!-- <img src="img/icons/linkedin.svg" alt=""> -->
-            </a>
-          </div>
         </div>
-        <div class="footer__right">
-          <div class="mailing">
-            <h6 class="mailing__caption">RECIVE EMAIL UPDATES</h6>
-            <form class="mailing__form form" action="#">
-              <div class="form__background">
-                <input class="form__input" type="text">
-                <input class="form__submit" type="submit" value="Join">
-              </div>
-            </form>
+        <div class="footer-top__info-links">
+          <div class="footer-top__links">
+            <ul>
+              <li class="footer-top__link link"><a href="#">Our Story</a></li>
+              <li class="footer-top__link link"><a href="#">Careers</a></li>
+              <li class="footer-top__link link"><a href="#">For Providers</a></li>
+              <li class="footer-top__link link"><a href="#">Customer Reviews</a></li>
+              <li class="footer-top__link link"><a href="#">FAQs</a></li>
+              <li class="footer-top__link link"><a href="#">Blog</a></li>
+              <li class="footer-top__link link"><a href="#">Locations</a></li>
+              <li class="footer-top__link link"><a href="#">Press</a></li>
+              <li class="footer-top__link link"><a href="#">care@alto.com</a></li>
+              <li class="footer-top__link link"><a href="#">1 (800) 874-5881</a></li>
+            </ul>
           </div>
-
-          <div class="footer__links">
-
-            <div class="footer__shop shop-links footer__links-box">
-              <h6 class="shop-links__title footer__links-title">Shop</h6>
-              <ul class="shop-links__list">
-                <li class="shop-links__item">
-                  <a href="#" class="shop-links__link footer__link ">Shop</a>
-                </li>
-                <li class="shop-links__item">
-                  <a href="#" class="shop-links__link footer__link">Collection</a>
-                </li>
-                <li class="shop-links__item">
-                  <a href="#" class="shop-links__link footer__link">Outlet</a>
-                </li>
-                <li class="shop-links__item">
-                  <a href="#" class="shop-links__link footer__link">Lookbook</a>
-                </li>
-              </ul>
-            </div>
-
-            <div class="footer__help help-links  footer__links-box">
-              <h6 class="help-links__title footer__links-title">help</h6>
-              <ul class="help-links__list">
-                <li class="help-links__item">
-                  <a href="#" class="help-links__link footer__link">FAQ</a>
-                </li>
-                <li class="help-links__item">
-                  <a href="#" class="help-links__link footer__link">Privecy Policy</a>
-                </li>
-                <li class="help-links__item">
-                  <a href="#" class="help-links__link footer__link">Tearms and conditions</a>
-                </li>
-                <li class="help-links__item">
-                  <a href="#" class="help-links__link footer__link">Return and Exchanges</a>
-                </li>
-              </ul>
-            </div>
-
-            <div class="footer__about about-links  footer__links-box">
-              <h6 class="about-links__title footer__links-title">about</h6>
-              <ul class="about-links__list">
-                <li class="about-links__item">
-                  <a href="#" class="about-links__link footer__link">Journal</a>
-                </li>
-                <li class="about-links__item">
-                  <a href="#" class="about-links__link footer__link">Our Story</a>
-                </li>
-                <li class="about-links__item">
-                  <a href="#" class="about-links__link footer__link">Contact</a>
-                </li>
-                <li class="about-links__item">
-                  <a href="#" class="about-links__link footer__link">Store Location</a>
-                </li>
-              </ul>
-            </div>
-
+          <div class="footer-top__socials">
+            <ul class="socials-list">
+              <li class="social__item"><a href="#" class="social__link instagram"> <span></span> <img
+                    src="img/icons/social-instagram.png" alt=""></a></li>
+              <li class="social__item"><a href="#" class="social__link facebook"><span></span><img
+                    src="img/icons/social-facebook.png" alt=""></a></li>
+              <li class="social__item"><a href="#" class="social__link twitter"><span></span><img
+                    src="img/icons/social-twitter.png" alt=""></a></li>
+              <li class="social__item"><a href="#" class="social__link linkedin"><span></span><img
+                    src="img/icons/social-linkedin.png" alt=""></a></li>
+              <li class="social__item"><a href="#" class="social__link social-r"><span></span><img
+                    src="img/icons/social-r.png" alt=""></a>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
+      <div class="footer-middle">
+        <p class="copyright-info">©2020 Alto Pharmacy. All rights reserved.</p>
+        <div class="privacy">
+          <ul>
+            <li class="privacy-link"><a href="#">Privacy Policy</a></li>
+            <li class="privacy-link"><a href="#">Notice of Privacy Practices</a></li>
+            <li class="privacy-link"><a href="#">Terms and Conditions</a></li>
+          </ul>
+        </div>
+      </div>
+
     </div>
-    <div class="copyright">
-      <p class="copyright__text">Copyright ©Сompany_name 2020. All rights reserved.</p>
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="footer-bottom__body">
+          <div class="footer-bottom__link"><a href="#"><img src="img/footer-img-1.png" alt="Urac Accredited"></a></div>
+          <div class="footer-bottom__link"><a href="#"><img src="img/footer-img-2.png"
+                alt="Vipps. National Assotiation Boards Of Pharmacy"></a></div>
+          <div class="footer-bottom__link"><a href="#"><img src="img/footer-img-3.png"
+                alt="Download on the App Store"></a></div>
+          <div class="footer-bottom__link"><a href="#"><img src="img/footer-img-4.png"
+                alt="Download on the Google Play"></a>
+          </div>
+        </div>
+      </div>
     </div>
   </footer>
 </body>
