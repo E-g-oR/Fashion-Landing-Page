@@ -1,6 +1,60 @@
 @media all and (max-width: 1200px) {
   .menu {
-    display: none;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    position: absolute;
+    left: 0;
+    top: 99px;
+    background: white;
+    padding: 30px;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-transform-origin: center top;
+            transform-origin: center top;
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
+  }
+  .menu__item {
+    -webkit-transition: 0.15s;
+    transition: 0.15s;
+    -webkit-transition-delay: 0s;
+            transition-delay: 0s;
+    opacity: 0;
+  }
+  .menu.main-menu_active {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+  }
+  .menu.main-menu_active .menu__item {
+    opacity: 1;
+  }
+  .menu.main-menu_active .menu__item_1 {
+    -webkit-transition-delay: 0.1s;
+            transition-delay: 0.1s;
+  }
+  .menu.main-menu_active .menu__item_2 {
+    -webkit-transition-delay: 0.17s;
+            transition-delay: 0.17s;
+  }
+  .menu.main-menu_active .menu__item_3 {
+    -webkit-transition-delay: 0.21s;
+            transition-delay: 0.21s;
+  }
+  .menu.main-menu_active .menu__item_4 {
+    -webkit-transition-delay: 0.28s;
+            transition-delay: 0.28s;
+  }
+  .menu.main-menu_active .menu__item_5 {
+    -webkit-transition-delay: 0.35s;
+            transition-delay: 0.35s;
+  }
+  .menu.main-menu_active .menu__item_6 {
+    -webkit-transition-delay: 0.42s;
+            transition-delay: 0.42s;
   }
   .menu-button {
     display: -webkit-box;
